@@ -11,8 +11,13 @@ namespace demo_22dth_n1_2.Controllers
         public HomeController(ILogger<HomeController> logger1)
         {
             _logger = logger1;
+            double tich = tich2so(3, 5);
+
         }
 
+        int tich2so(int x, int z) {
+            return x * z;
+        }
         public IActionResult Index()
         {
             return View();
