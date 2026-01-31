@@ -8,18 +8,30 @@ namespace demo_22dth_n1_2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger1)
         {
-            _logger = logger;
+            _logger = logger1;
+            double tich = tich2so(3, 5);
+
         }
 
+        int tich2so(int x, int z) {
+            return x * z;
+        }
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        int tonghaiso(int a, int b) { 
+            return a + b;
+        }
+        public IActionResult Privacy1()
         {
+            return View();
+        }
+        public IActionResult About()
+        {
+
             return View();
         }
 
