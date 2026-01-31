@@ -10,5 +10,8 @@ namespace demo_22dth_n1_2.Controllers.api
         public AdminController() { 
             
         }
+        public ActionResult getStudent() {
+            return Ok();
+        }
     }
 }
