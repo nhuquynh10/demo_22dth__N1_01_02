@@ -25,8 +25,13 @@ namespace demo_22dth_n1_2.Controllers
         int tonghaiso(int a, int b) { 
             return a + b;
         }
-        public IActionResult Privacy()
+        public IActionResult Privacy1()
         {
+            return View();
+        }
+        public IActionResult About()
+        {
+
             return View();
         }
 

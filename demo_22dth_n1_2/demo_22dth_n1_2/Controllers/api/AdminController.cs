@@ -10,5 +10,10 @@ namespace demo_22dth_n1_2.Controllers.api
         public AdminController() { 
             
         }
+        [HttpGet("get-product")]
+        public ActionResult Index() { 
+
+            return Ok(new {  status = true, message = ""});
+        }
     }
 }
